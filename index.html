@@ -1,17 +1,135 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>slugsoft</title>
-	</head>
+<html>	
+	<head><meta charset="utf-8"><meta name="theme-color" content="#ffffff"><title>slugsoft</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="links"><link rel="stylesheet" type="text/css" href="static/main.css"><link rel="stylesheet" type="text/css" href="static/869113e02d4a3308760e91c031063393.css"><!-- Icons--><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="manifest" href="/site.webmanifest"><link rel="stylesheet" href="static/basicLightbox.min.css"></head>
+	<!-- need to make icons -->
+	<style>
+		button {
+		  background: transparent;
+		  box-shadow: 0px 0px 0px transparent;
+		  border: 0px solid transparent;
+		  text-shadow: 0px 0px 0px transparent;
+		  cursor:pointer;
+		}
+
+		button:hover {
+		  background: transparent;
+		  box-shadow: 0px 0px 0px transparent;
+		  border: 0px solid transparent;
+		  text-shadow: 0px 0px 0px transparent;
+		}
+
+		button:active {
+		  outline: none;
+		  border: none;
+		}
+
+		button:focus {
+		  outline: 0;
+		}
+		.grid {
+			margin: auto;
+			padding: 10px;
+		}
+		.grid-item img {
+			max-width:100%;
+			width:  320px;
+			height:  auto;
+		}
+		.grid-sizer, .grid-item {
+			max-width: 30%;
+			height: auto;
+			float: left;  
+		}	
+
+        #container{
+            position: absolute;
+            width:100%;
+            height: 100%;
+            display:flex;
+            flex-direction: column;
+        }		
+	</style>
 	<body>
+		<h1 style="text-align:center;">slugsoft</h1>
+		<p class="st" style="text-align:center;">Programmer, Artist, and Composer</p>
+		<p class = "st" style="text-align:center;">
+		<br>
+			<a href="https://twitter.com/slugsoft">Twitter</a> ★ <a href="https://sloweh.tumblr.com">Tumblr</a> ★ <a href="https://www.youtube.com/channel/UCc_JPOlIQqYgqvQILJOd41Q">Youtube</a> ★ <a href="https://soundcloud.com/slugsoft">SoundCloud</a> ★ <a href="mailto:slugsoftslow@gmail.com">Contact</a>
+		</p>		
 		
-		<h1 align="center">slugsoft</h1>
+		<!--portfolio-->
+		<h2>Projects</h2>
+		<h3>Nowhere Patrol</h2>
+		<p class="st">2017 - 2018</p>
+		<div class="fancyPositioning"><div class="picture-left"><figure>
+		<button class="image2"><img src="images/MainCapsuleImage.png" title="Cover art"></button>		
+		<figcaption><a href="https://nowherepatrol.github.io/">Press Kit</a> <a href="https://store.steampowered.com/app/961660/Nowhere_Patrol/">Steam</a></figcaption></figure></div><div class="tleft"><p>Solo project made in C# with Monogame.</p><p>Nowhere Patrol is a boss rush game with bullet hell and platforming elements. Inspired by classic action arcade games with its steep difficulty curve and non-stop action. The game is a true boss rush. Expect nothing but boss battles, and lots of deaths.</p></div></div>
+		<p style="text-align:center;">		
+		<h3>Nowhere Patrol 2</h2>
+		<p class="st">2020 - present</p>
+		<div class="fancyPositioning"><div class="picture-left"><figure>
+		<button class="image2"><img src="images/poster.png" title="Cover art"></button>		
+		<figcaption>Key art</figcaption></figure></div><div class="tleft"><p>Work in progress.</p></div></div>
 		<p style="text-align:center;">
+		<h2>Gallery</h2>
+		<p class="st" >Click to play.</p>
+		<!-- Need to figure out auto resize for lightbox -->
+		<div class="grid" class="center">
+		  <div class="grid-sizer"></div>
+		  <div class="grid-item"><button class="image"><img src="images/01.png"></button></div>
+		  <div class="grid-item"><button class="image"><img src="images/02.png"></button></div>
+		  <div class="grid-item"><button class="image"><img src="images/03.png"></button></div>
+		  <div class="grid-item"><button class="image"><img src="images/04.png"></button></div>
+		  <div class="grid-item"><button class="image"><img src="images/05.png"></button></div>		  
+		  <div class="grid-item"><button class="image"><img src="images/06.png"></button></div>
+		  <div class="grid-item"><button class="image"><img src="images/07.png"></button></div>		 
+		  <div class="grid-item"><button class="image"><img src="images/20.png"></button></div>		 
+		  <div class="grid-item"><button class="image"><img src="images/22.png"></button></div>		 
+		  <div class="grid-item"><button class="image"><img src="images/23.png"></button></div>		 
+		  <div class="grid-item"><button class="image"><img src="images/24.png"></button></div>	
+		  <div class="grid-item"><button class="image"><img src="images/10.png"></button></div>		 
+		  <div class="grid-item"><button class="image"><img src="images/103.png"></button></div>	
+		  <div class="grid-item"><button class="image2">
+			<div class="html" hidden>
+			<div >
+			<h1>Nowhere Patrol 2's Level Editor</h1>
+			<p>It utilizes a few libraries. It's written in C# winforms. It's used to animate sprites and construct levels currently.</p>
+			</div>
+			</div>
+			<img src="images/100.png">
+		  </button></div>		 
+		  <div class="grid-item"><button class="image2"><img src="images/200.png"></button></div>	
+		</div>		
+		</p>	
 		
-			<a href="https://twitter.com/slugsoft">Twitter</a>
-			<br>
-			<a href="https://sloweh.tumblr.com">Tumblr</a>
-		</p>
-		I don't know how to make a website yet. :0)
+	<script src="static/basicLightbox.min.js"></script>
+	<script src="static/masonry.pkgd.min.js"></script>
+	<script>
+		// Grid stuff
+		var elem = document.querySelector('.grid');
+		
+		var msnry = new Masonry( '.grid', {
+		  columnWidth: '.grid-sizer',
+		  itemSelector: '.grid-item',
+		  percentPosition: true
+		});
+		
+		function myf(userItem) {
+			 basicLightbox.create(userItem.currentTarget.innerHTML.replace("png","gif").replace("hidden","")).show()
+		}
+
+		// Lightbox stuff
+		var items = document.querySelectorAll('button.image')
+		items.forEach(function(userItem) {			
+			userItem.addEventListener("click",myf);
+			//userItem.onclick = basicLightbox.create(userItem.innerHTML.replace("hidden","")).show
+		});
+
+		items = document.querySelectorAll('button.image2')
+		items.forEach(function(userItem) {
+			userItem.onclick = basicLightbox.create(userItem.innerHTML.replace("hidden","")).show
+		});
+	</script>
+		
 	</body>
 </html>
