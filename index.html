@@ -103,17 +103,24 @@
 		</p>	
 		
 	<script src="static/basicLightbox.min.js"></script>
+	<script src="static/imagesloaded.pkgd.min.js"></script>
 	<script src="static/masonry.pkgd.min.js"></script>
-	<script>
+	<script type="text/javascript">
 		// Grid stuff
 		var elem = document.querySelector('.grid');
 		
-		var msnry = new Masonry( '.grid', {
+		var grid = document.querySelector('.grid');
+		var msnry = new Masonry( grid, {
 		  columnWidth: '.grid-sizer',
 		  itemSelector: '.grid-item',
 		  percentPosition: true
 		});
-		
+
+		imagesLoaded( grid ).on( 'progress', function() {
+		  // layout Masonry after each image loads
+		  msnry.layout();
+		});
+		  
 		function myf(userItem) {
 			 basicLightbox.create(userItem.currentTarget.innerHTML.replace("png","gif").replace("hidden","")).show()
 		}
