@@ -26,6 +26,21 @@
 		button:focus {
 		  outline: 0;
 		}
+		
+		
+		.headerheader {
+			text-align: center;
+		}
+		
+		.logo {
+			text-align: center;
+
+		}
+		.logo img{	
+			width: 75px;
+			height: auto;
+		}
+		
 		.grid {
 			margin: auto;
 			padding: 10px;
@@ -41,6 +56,8 @@
 			float: left;  
 		}	
 
+
+
         #container{
             position: absolute;
             width:100%;
@@ -50,13 +67,21 @@
         }		
 	</style>
 	<body>
-		<h1 style="text-align:center;">slugsoft</h1>
-		<p class="st" style="text-align:center;">Programmer, Artist, and Composer</p>
-		<p class = "st" style="text-align:center;">
-		<br>
-			<a href="https://bsky.app/profile/slugsoft.dev">Bluesky</a> ★ <a href="https://twitter.com/slugsoft">Twitter</a> ★ <a href="https://www.youtube.com/channel/UCc_JPOlIQqYgqvQILJOd41Q">Youtube</a> ★ <a href="https://soundcloud.com/slugsoft">SoundCloud</a> ★ <a href="mailto:slugsoftslow@gmail.com">Contact</a>
+		
+		<div class="headerheader">
+		<img src="images/slug2.png"/><img src="images/32x32_np.jpg"/><img src="images/32x32_chz.png"/>
+		</div>
+		<h1 style="text-align:left;">Slugsoft</h1>
+		<p class="st" style="text-align:left;">Games, Code, Art, and Music</p>
+		<h2 class = "st" style="text-align:center;">
+			<a href="https://bsky.app/profile/slugsoft.dev">Bluesky</a> ★ <a href="https://x.com/slugsoft">X</a> ★ <a href="https://www.youtube.com/channel/UCc_JPOlIQqYgqvQILJOd41Q">Youtube</a> ★ <a href="https://soundcloud.com/slugsoft">SoundCloud</a> ★ <a href="https://github.com/slugsoftslow">Github</a> ★ <a href="https://discord.gg/ARWuSHsM5F">Discord</a> ★ <a href="mailto:slugsoftslow@gmail.com">Contact</a>
 			<!-- Instead of mailto just have a lightbox that shows the email -->
-		</p>		
+		</h2>		
+		
+		<!--aboutme-->
+		<!--<h4 style="text-align:left;">About Me</h4>-->
+		<br>
+		<p class="st" style="text-align:left;">Hey, I usually go by <i>"Slow"</i> or <i>"Slugsoft"</i>. I'm just a guy that loves to learn and make things. I'm usually researching or working on a project, so you may not see me around. If you managed to find this place you're gonna have a lucky day.<br><br>I like little creatures of all kinds, from cute, to cool, to ugly. So that's usually what I draw. I also like intense action games! And I love all kinds of music, feel free to send your favorite song my way.
 		
 		<!--portfolio-->
 		<h2>Projects</h2>
@@ -64,7 +89,7 @@
 		<p class="st">2017 - 2018, 2025</p>
 		<div class="fancyPositioning"><div class="picture-left"><figure>
 		<button class="image2"><img src="images/MainCapsuleImage.png" title="Cover art"></button>		
-		<figcaption><a href="https://slugsoft.dev/np">Press Kit</a> <a href="https://www.nintendo.com/us/store/products/nowhere-patrol-switch/">Nintendo eShop</a> <a href="https://store.steampowered.com/app/961660/Nowhere_Patrol/">Steam</a></figcaption></figure></div><div class="tleft"><p>Nowhere Patrol is a boss rush game with bullet hell and platforming elements. Inspired by classic action arcade games with its steep difficulty curve and non-stop action. The game is a true boss rush. Expect nothing but boss battles, and lots of deaths.</p><p>Solo project made in C# with Monogame and FNA.</p></div></div>
+		<figcaption><a href="https://slugsoft.dev/np">Press Kit</a> <a href="https://www.nintendo.com/us/store/products/nowhere-patrol-switch/">Nintendo eShop</a> <a href="https://store.steampowered.com/app/961660/Nowhere_Patrol/">Steam</a></figcaption></figure></div><div class="tleft"><p><p>Nowhere Patrol is a boss rush game with bullet hell and platforming elements. Inspired by classic action arcade games with its steep difficulty curve and non-stop action. The game is a true boss rush. Expect nothing but boss battles, and lots of deaths.</p><p>Solo project made in C# with Monogame and FNA.</p></div></div>
 		<p style="text-align:center;">		
 		<h3>Chromahertz</h2>
 		<p class="st">2020 - present</p>
@@ -107,6 +132,7 @@
 		  <!--<div class="grid-item"><button class="image"><img src="images/20.png"></button></div>-->
 		  <div class="grid-item"><button class="image"><img src="images/22.png"></button></div>		 
 		  <div class="grid-item"><button class="image"><img src="images/23.png"></button></div>		 
+		  <div class="grid-item"><button class="image2"><img src="images/slugsoft.png"></button></div>		 
 		</div>		
 		</p>	
 		
@@ -145,6 +171,9 @@
 			userItem.onclick = basicLightbox.create(userItem.innerHTML.replace("hidden","")).show
 		});
 	</script>
+		<div class="logo">
+		<p>© Quenton Mason</p>
+		</div>
 		
 	</body>
 </html>
